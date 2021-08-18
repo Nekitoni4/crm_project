@@ -1,0 +1,128 @@
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal__wrapper {
+    position: relative;
+    width: 450px;
+    background-color: #fff;
+}
+
+.modal__close {
+    position: absolute;
+    top: 21.77px;
+    right: 21.77px;
+    background-image: url(../img/modal_close.svg);
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: transparent;
+}
+
+.modal__client_form {
+    padding: 24px 30px 25px 30px;
+}
+
+.modal__full_name {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 4px 0;
+    margin-top: 28px;
+}
+
+.modal__add_contact_form {
+    text-align: center;
+    background-color: rgba(200, 197, 209, 0.5);
+}
+
+.modal__action_contact_btn {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.modal__contact_rows:not(.hidden)+.modal__action_contact_btn {
+    margin-bottom: 25px;
+}
+
+.modal__controls_panel {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.modal__contact_rows {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
+.modal__save_state_btn {
+    padding: 12.5px 35px;
+    color: white;
+    background: #9873FF;
+    border: none;
+}
+
+.modal__cancel_state_btn {
+    background: inherit;
+    color: black;
+    border: none;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.modal__contact_delete {
+    background-color: #E7E5EB;
+    background-image: url(../img/contact_delete.svg);
+    width: 27px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.modal__contact_row {
+    display: flex;
+    justify-content: center;
+}
+
+.modal__contact_row:not(:first-child) {
+    margin-top: 15px;
+}
+
+.modal__contact_row>* {
+    border: 1px solid #C8C5D1;
+}
+
+.modal__contact_row>*:not(:last-child) {
+    border-right: none;
+}
+
+.modal__contact_type {
+    background: #E7E5EB;
+}
+
+.modal__contact_input {
+    background: transparent;
+    padding: 8px 0 9px 11.63px;
+}
+
+.modal__client_header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.modal__client_id {
+    margin-left: 9px;
+}

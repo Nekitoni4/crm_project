@@ -1,0 +1,27 @@
+.header {
+    padding: 23px 20px;
+    background-color: white;
+    box-shadow: 0 1px 10.5px gray;
+}
+
+.flex-inner {
+    display: flex;
+}
+
+.header__logo {
+    margin-right: 53px;
+}
+
+.header__search {
+    width: 581px;
+    border: 1px solid #C8C5D1;
+    padding: 12px 0 13px 16px;
+}
+
+.header__search::placeholder {
+    color: #C8C5D1;
+}
+
+.header__search:focus {
+    outline: none;
+}

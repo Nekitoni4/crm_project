@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/import.css">
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script defer src="./main.js" type="module"></script>
+    <title>CRM project</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src="./img/main_logo.svg" alt="Главный логотип" class="header__logo">
+            <input type="search" class="header_search" placeholder="Введите запрос">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <h2 class="main__title">
+                    Клиенты
+                </h2>
+                <table class="clients">
+                    <thead class="clients__title">
+                        <tr>
+                            <th data-sort="ASC" class="clients__col" id="id">ID</th>
+                            <th data-sort="ASC" class="clients__col" id="full_name">Фамилия Имя Отчество</th>
+                            <th data-sort="ASC" class="clients__col" id="create_date">Дата и время создания</th>
+                            <th data-sort="ASC" class="clients__col" id="change_date">Последние изменения</th>
+                            <th class="clients__col" id="contacts">Контакты</th>
+                            <th class="clients__col" id="actions">Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody class="clients__inner">
+
+                    </tbody>
+                </table>
+                <button class="main__add_client_btn" id="add_client">Добавить клиента</button>
+            </div>
+        </div>
+    </main>
+    <div class="modal hidden" data-action="">
+        <div class="modal__wrapper">
+            <button class="modal__close"></button>
+            <div class="modal__client_form">
+                <div class="modal__client_header">
+                    <h2 class="modal__title">
+
+                    </h2>
+                    <span class="modal__client_id hidden"></span>
+                </div>
+                <form name="fullName">
+                    <input type="text" class="modal__full_name" id="surname" placeholder="Фамилия">
+                    <input type="text" class="modal__full_name" id="name" placeholder="Имя">
+                    <input type="text" class="modal__full_name" id="patronymic" placeholder="Отчество">
+                </form>
+            </div>
+            <div class="modal__add_contact_form">
+                <ul class="modal__contact_rows hidden">
+                </ul>
+                <button class="modal__action_contact_btn">Добавить контакт</button>
+            </div>
+            <div class="modal__controls_panel">
+                <button class="modal__save_state_btn">Сохранить</button>
+                <button class="modal__cancel_state_btn" data-action=""></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal hidden" delete-modal data-action="">
+        <div class="modal__wrapper">
+            <button class="modal__close"></button>
+            <div class="modal__client_form">
+                <div class="modal__client_header">
+                    <h2 class="modal__title">
+
+                    </h2>
+                    <div class="modal__description">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal__controls_panel">
+                <button class="modal__save_state_btn">Удалить</button>
+                <button class="modal__cancel_state_btn" data-action=""></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

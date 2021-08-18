@@ -1,0 +1,72 @@
+main {
+    margin-top: 40px;
+}
+
+.clients {
+    border-spacing: 0 2px;
+}
+
+.clients th {
+    cursor: pointer;
+}
+
+.main__title {
+    font-size: 24px;
+    margin-bottom: 26px;
+}
+
+.clients__col {
+    text-align: left;
+    padding-left: 20px;
+}
+
+tbody td {
+    background-color: white;
+    padding: 22px 20px 21px 20px;
+}
+
+.main__add_client_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.contacts__item {
+    display: inline-block;
+    background-size: 16px 16px;
+    padding: 8px;
+    background-repeat: no-repeat;
+}
+
+.contacts__control_item {
+    display: inline-block;
+}
+
+[data-phone] {
+    background-image: url("../img/contact_icons/phone.svg");
+}
+
+[data-add_phone] {
+    background-image: url("../img/contact_icons/phone.svg");
+}
+
+[data-email] {
+    background-image: url("../img/contact_icons/mail.svg");
+}
+
+[data-vk] {
+    background-image: url("../img/contact_icons/vk.svg");
+}
+
+[data-facebook] {
+    background-image: url("../img/contact_icons/fb.svg");
+}
+
+[data-count_contacts] {
+    margin: 0;
+    padding: 0;
+}
+
+.time {
+    color: #B0B0B0;
+}

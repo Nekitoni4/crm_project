@@ -1,0 +1,33 @@
+body {
+    background-color: #E5E5E5 !important;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1186px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 2px;
+    border-collapse: separate !important;
+}
+
+thead td {
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+tbody td {
+    padding: 20px;
+}
+
+tbody td {
+    background-color: white;
+}
+
+button,
+span {
+    cursor: pointer;
+}
+
